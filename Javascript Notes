@@ -1,1 +1,12 @@
+Javascript
+
+Add comment at end of line : // “example text”
+Add comment on multi-line : /* “example 
+text” */
+
+Variables represent data : var “example text” ;
+
+Variables 
+Var before creates variable : var “example text”; = example test is a variable
+Example text = 5;  = “Example text” now is 5 
 
