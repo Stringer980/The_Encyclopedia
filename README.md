@@ -12,3 +12,8 @@ HTML & CSS
 Back End
 
 [Backend Programming Introduction](https://docs.google.com/document/d/1Sm3ZGulUCWc7JgA7IeKGxmXSjCsrtOub0GI1IAmEU4I/edit?usp=sharing)
+
+
+Git
+
+[GIT Introduction and terms](https://docs.google.com/document/d/13UzwJ2a8OSZHs4FOhXXvWrRZdsIbwolIrixlo27xjAo/edit?usp=sharing)
