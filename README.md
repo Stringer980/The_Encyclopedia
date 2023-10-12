@@ -13,6 +13,7 @@ Back End
 
 [Backend Programming Introduction](https://docs.google.com/document/d/1Sm3ZGulUCWc7JgA7IeKGxmXSjCsrtOub0GI1IAmEU4I/edit?usp=sharing)
 
+[Javascript Notes](https://docs.google.com/document/d/1aDV02TuYX7uFVw0g-zoPGT82ejHPNPcYbyY5UfT79bY/edit?usp=sharing)
 
 Git
 
