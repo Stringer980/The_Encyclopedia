@@ -1,0 +1,4 @@
+function functionWithArgs(option1, option2) {
+  console.log(option1 + option2)
+}
+functionWithArgs(5, 10);

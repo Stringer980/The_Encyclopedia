@@ -1,0 +1,2 @@
+const myList = [["Milk", 4], ["lettuce", 1], ["Tea", 3], ["Cereal", 1], ["Chips", 5]];
+console.log(myList)
