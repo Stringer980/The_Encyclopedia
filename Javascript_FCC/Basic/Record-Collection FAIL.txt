@@ -1,0 +1,18 @@
+function updateRecords(records, id, prop, value) {
+
+  {if (value === "") { 
+    delete records.id.prop;
+  } else if (prop !== "tracks" && value !== "") {
+    records.id.prop = value;
+  } else if (prop === "tracks" && value !== "") {
+    tracks.push(value);
+  } else if(records.id.hasOwnProperty("tracks") === false) {
+     records.id["tracks"] =[];
+     "tracks".push(prop);
+  }
+  
+   return records;
+
+}
+}
+updateRecords(recor
