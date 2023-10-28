@@ -1,0 +1,13 @@
+function rangeOfNumbers(startNum, endNum) {
+  if (startNum >= endNum +1) {
+    return [];
+  } 
+  const array = rangeOfNumbers((startNum+1),endNum );
+  array.unshift(startNum);
+ 
+  return array;
+ 
+}
+
+
+console.log(rangeOfNumbers(6,9));
