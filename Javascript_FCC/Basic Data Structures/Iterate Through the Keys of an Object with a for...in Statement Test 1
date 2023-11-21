@@ -1,0 +1,13 @@
+
+function countOnline(allUsers) {
+  // Only change code below this line
+  /*let total =""
+for (let a in allUsers){
+  if (allUsers[a].online === true){
+    return total++ */
+  }
+}
+  // Only change code above this line
+}
+
+console.log(countOnline(users));
