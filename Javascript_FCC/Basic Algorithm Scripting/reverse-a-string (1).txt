@@ -1,0 +1,10 @@
+function reverseString(str) {
+   let arr1 = []
+   for (let i = 0; i < str.length; i++) {
+    arr1.unshift(str[i]);
+    
+   }
+   return arr1.join(""); 
+}
+
+reverseString("hello");
