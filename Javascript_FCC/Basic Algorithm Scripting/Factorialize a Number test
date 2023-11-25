@@ -1,0 +1,11 @@
+function factorialize(num) {
+  for (let i =0; i < num.length; i++){
+  num += num[i]
+   
+    console.log(num)
+    
+  }
+return num;
+}
+
+factorialize(5);
