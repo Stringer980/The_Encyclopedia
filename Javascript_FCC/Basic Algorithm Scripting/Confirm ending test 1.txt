@@ -1,0 +1,8 @@
+function confirmEnding(str, target) {
+const a = target
+let regex = new RegExp(`${a}`, "g");
+console.log(regex)
+return str.test(regex);
+}
+
+confirmEnding("Bastian", "n");
