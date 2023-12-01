@@ -1,0 +1,13 @@
+function repeatStringNumTimes(str, num) {
+  let empty = []
+  let regex = new RegExp(`${str}`)
+  while (num > 0){
+    empty.push(regex);
+    num--
+  }
+console.log(empty.toString(""))
+ // repeatStringNumTimes(str, num -1)
+ // empty.toString("")
+}
+
+repeatStringNumTimes("abc", 3);
