@@ -1,0 +1,14 @@
+function repeatStringNumTimes(str, num) {
+let arr = [];
+while (num > 0){
+    arr.push(str);
+    num--; 
+   
+  }
+return arr.join("")
+  //return arr.toString(a)
+
+ 
+}
+
+repeatStringNumTimes("abc", 3);
