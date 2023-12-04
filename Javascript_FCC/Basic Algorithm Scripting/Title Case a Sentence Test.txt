@@ -1,0 +1,12 @@
+function titleCase(str) {
+  let a = str.toLowerCase();
+  let b = a.split(" ")
+  let regex = /^\w/gi
+  for (let i = 0; i< b.length; i++){
+ console.log(b[i].match(regex))
+  
+  }
+  return str;
+}
+
+console.log(titleCase("I'm a little tea pot"));
