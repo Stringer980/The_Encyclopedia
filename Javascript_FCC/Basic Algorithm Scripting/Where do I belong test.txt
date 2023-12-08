@@ -1,0 +1,10 @@
+function getIndexToIns(arr, num) {
+  let empty = []
+  arr.push(num);
+  return arr.sort();
+}
+ 
+
+console.log(getIndexToIns([2, 20, 10], 19));
+let a = [5, 3, 20, 3]
+console.log(a.sort())
