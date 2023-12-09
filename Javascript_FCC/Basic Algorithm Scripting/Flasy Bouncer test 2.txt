@@ -1,0 +1,17 @@
+function mutation(arr) {
+ let arr1 = []
+ arr.forEach((arr) => {arr1.push(arr.toLowerCase())
+ });
+ let a = arr1.slice(0,1);
+ let b = arr1.slice(1); 
+ for(let i = 0; i < a.length; i++){
+ console.log(arr1[0][i])
+ if(a.indexOf(b[i]) === 0 ){
+   return true;
+ }
+  return false; 
+ }
+  }
+
+
+console.log(mutation(["hello", "hey"]));
