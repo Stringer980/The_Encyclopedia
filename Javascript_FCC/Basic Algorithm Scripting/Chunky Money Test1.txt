@@ -1,0 +1,14 @@
+function chunkArrayInGroups(arr, size) {
+  let empty = [];
+  let empty2 = []
+  let rows = size;
+  let columns = size;
+  for(let i = 0; i <rows; i++){
+    empty[i]=arr.slice(0,2)
+    empty2.push( empty[i])
+  }
+ 
+  return empty2;
+}
+
+console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
