@@ -1,0 +1,23 @@
+let bird = {
+  name: "Donald",
+  numLegs: 2
+};
+
+let boat = {
+  name: "Warrior",
+  type: "race-boat"
+};
+
+// Only change code below this line
+
+let glideMixin = function(obj){ //obj is arbatary
+  obj.glide = function() {
+    console.log("glide")
+  }
+};
+
+glideMixin(boat);
+glideMixin(bird);
+
+boat.glide();  //shows the word glide
+bird.glide();  //shows the word glide
