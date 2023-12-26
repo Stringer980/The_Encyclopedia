@@ -1,0 +1,11 @@
+
+const filteredList = "";
+let a = [];
+ a = watchList.map((element) => ({
+   title: element["Title"],
+   rating: Number(element["imdbRating"])}))
+let b = [];
+  b = watchList.filter((highRating) => highRating["imdbRating"] > 8.0)  
+// Only change code above this line
+console.log(a);
+console.log(b);
