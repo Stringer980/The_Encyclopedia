@@ -1,0 +1,5 @@
+const filteredList = "";
+ filteredList = watchList.filter((element) => ({title: element["Title"]}))
+// Only change code above this line
+return filteredList
+console.log(filteredList);
