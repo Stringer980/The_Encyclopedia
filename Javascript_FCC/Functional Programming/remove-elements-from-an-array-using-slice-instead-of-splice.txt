@@ -1,0 +1,4 @@
+function nonMutatingSplice(cities) {
+console.log(cities.slice(0,3))
+  return cities.slice(0,3);
+}
