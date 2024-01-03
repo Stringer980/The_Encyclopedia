@@ -1,0 +1,15 @@
+function sumAll(arr) {
+  let arr1 = []
+  let max = Math.max(...arr)
+  let min = Math.min(...arr)
+  arr1.push(max)
+  while (max > min) {
+     arr1.push(min)
+     min++
+  }
+
+return arr1.reduce((a,b) => a+b)
+  
+}
+console.log(sumAll([1, 4]))
+sumAll([1, 4]);
