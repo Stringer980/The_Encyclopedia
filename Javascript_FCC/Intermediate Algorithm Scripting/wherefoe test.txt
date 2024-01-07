@@ -1,0 +1,18 @@
+function whatIsInAName(collection, source) {
+ for (let i = 0, i < collection.length; i++) {
+   
+ }
+    var obj = data.messages[i];
+
+ return Object.keys(collection)
+
+}
+
+//`${key}: ${col[key]}`  `${source}`
+console.log(whatIsInAName([
+  { first: "Romeo", last: "Montague" }, 
+  { first: "Mercutio", last: null }, 
+  { first: "Tybalt", last: "Capulet" }],
+
+  { last: "Capulet" }
+  ))
