@@ -1,0 +1,12 @@
+function whatIsInAName(collection, source) {
+let souKey = Object.keys(source)
+console.log(collection[2])
+console.log(souKey[0])
+console.log(source[0])
+return collection.filter(a => souKey
+          .every(b=> a[b] === source[b]))
+             
+
+}
+
+whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
