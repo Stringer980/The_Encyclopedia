@@ -1,0 +1,16 @@
+function whatIsInAName(collection, source) {
+let arr =[];
+collection.map(value =>{
+  for(let a in value){
+    for(let b in source){
+      console.log(value[a]  , source[b] )
+      if(value[a] == source[b] && a == b ){
+        arr.push(value);
+      }
+    }
+  }
+})
+return arr
+}
+console.log(whatIsInAName([{ "apple": 1, "bat": 2 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }], { "apple": 1, "bat": 2 }))
+whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
