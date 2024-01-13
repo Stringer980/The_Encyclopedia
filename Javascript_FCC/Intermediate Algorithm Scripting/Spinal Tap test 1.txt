@@ -1,0 +1,12 @@
+function spinalCase(str) {
+  const regex = /_|\s/gi
+  return str.replace(regex,"-")
+            .toLowerCase()
+            if()
+}
+console.log(spinalCase("thisIsSpinalTap"))
+spinalCase('This Is Spinal Tap');
+// if  captial does not have a space behind it then add space
+//remove all existing symbols
+//const regex = /Dog/i;
+//console.log(paragraph.replace(regex, 'ferret'));
