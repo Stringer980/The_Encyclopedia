@@ -1,0 +1,16 @@
+function spinalCase(str) {
+  const regex1 = /_|\s/gi
+  const regex2 = /[A-Z]*/gi
+ return str.replace(/[A-Z]/g, str => " " + str.toLowerCase()).replace(/\s+/g,"-").replace(/^-|_/gi,"")
+  
+  //replace(regex1|regex2,"-")
+           // .toLowerCase()
+}
+console.log(spinalCase("The_Andy_Griffith_Show"))
+spinalCase('This Is Spinal Tap');
+// if  captial does not have a space behind it then add space
+//remove all existing symbols
+//const regex = /Dog/i;
+//console.log(paragraph.replace(regex, 'ferret'));
+// if i is = toUppercase then add space at index i-1
+//for(let i = 0)
