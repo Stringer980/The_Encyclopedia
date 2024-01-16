@@ -1,0 +1,29 @@
+function translatePigLatin(str) {
+  let allVowels = /[aeiou]+/i;
+  let constStart = /^[^aeiou]/i;
+  let vowelStart = /^[aeiou]/i;
+   
+let matched = str.match(allVowels);
+//let matchedIndex = matched.index;
+
+let arr = [];
+if(allVowels.test(str)== false){
+  arr.push(str + "ay")
+  return arr.join("")
+} else
+ if(constStart.test(str)){
+  arr.push( str.slice(matched.index))
+  arr.push(str.slice(0,matched.index ) + "ay") 
+  return arr.join("")
+ } else if(vowelStart.test(str)){
+  arr.push(str + "way")
+  return arr.join("")
+} 
+}
+console.log(translatePigLatin("rhythm"))
+translatePigLatin("consonant");
+
+/* } else if(allVowels.test(str) == false){
+ console.log(arr.push(str + "ay"))
+  return arr.join("")*/
+
