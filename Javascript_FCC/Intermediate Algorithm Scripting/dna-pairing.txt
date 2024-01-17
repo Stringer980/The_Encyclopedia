@@ -1,0 +1,17 @@
+function pairElement(str) {
+  let arr = []
+   let split=  str.split("")
+   for(let i=0; i<str.length; i++){
+     if(split[i] == "G"){
+       arr.push([split[i] , "C"])
+     } else if (split[i] == "C"){
+       arr.push([split[i] , "G"])
+     } else if (split[i] == "A"){
+       arr.push([split[i] , "T"])
+     }else if (split[i] == "T"){
+       arr.push([split[i] , "A"])
+     }
+   }return arr
+}
+console.log(pairElement("ATCGA"))
+pairElement("GCG");
