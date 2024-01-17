@@ -1,0 +1,17 @@
+function myReplace(str, before, after) {
+ 
+let capitalCheck = /^[A-Z]/
+
+let afterCapitalize = after.replace(after[0] , index  => index.toUpperCase())
+let afterLower = after.replace(after[0] , index  => index.toLowerCase())
+
+  if(capitalCheck.test(before)){
+    return str.replace(before,afterCapitalize)
+  } else 
+    if(capitalCheck.test(before) == false){
+    return str.replace(before,afterLower)
+  
+}}
+console.log(myReplace("He is Sleeping on the couch", "Sleeping", "sitting"))
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+
