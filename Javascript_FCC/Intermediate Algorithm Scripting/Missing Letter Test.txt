@@ -1,0 +1,23 @@
+function fearNotLetter(str) {
+ 
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split("");
+  let strSplit =str.split("")
+ // console.log(strSplit.indexOf("e"))
+  let arr =[]
+  for (let i =0; i < alphabet.length; i++){
+    if(strSplit.indexOf(alphabet[i]) == -1 ){
+     arr.push(alphabet[i])
+    }
+  }let a = arr.join("")
+  console.log(a)
+  let start = a.slice(0,alphabet.indexOf(str[0]))
+  console.log(start)
+  let end = a.slice(alphabet.indexOf(str[1]))
+  console.log(str.slice(-1)) // lopok here again 
+ 
+}
+console.log(fearNotLetter("stvwx"))
+fearNotLetter("abce");
+
+// if alphat bet [i] !== str [i]( strlength) return indexOf
+// delete anything beore [0] and after last[i]
