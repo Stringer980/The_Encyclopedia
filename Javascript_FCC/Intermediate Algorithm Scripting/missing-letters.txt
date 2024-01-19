@@ -1,0 +1,23 @@
+function fearNotLetter(str) {
+  let alphabetjoined = "abcdefghijklmnopqrstuvwxyz";
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split("");
+  let strSplit =str.split("")
+  let arr =[]
+
+if(str != alphabetjoined ){
+  for (let i =0; i < alphabet.length; i++){
+    if(strSplit.indexOf(alphabet[i]) == -1 ){
+     arr.push(alphabet[i]) 
+    }
+  }
+  
+  let a = arr.join("");
+  let startIndex = str.substr(0,1); //s
+  let start = alphabet.slice(0,alphabet.indexOf(startIndex)).join("");
+  let endIndex = str.substr(-1,1) // x
+  let end = alphabet.slice(alphabet.indexOf(endIndex) + 1).join("")
+  return a.replace(start,"").replace(end,"")}
+ 
+}
+console.log(fearNotLetter("stvwx"))
+fearNotLetter("stvwx");
