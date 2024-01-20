@@ -1,0 +1,19 @@
+function uniteUnique(...arr) {
+  // [ 1, 3, 2, 5, 2, 1, 4, 2, 1 ]
+let arrFlat = arr.flat().join();
+let newArr = []
+let regex = /^(.*)(\r?\n\1)+$/
+let a = arrFlat.match(regex)
+return a 
+for(let i =0; i<arrFlat.length; i++){
+  if(arrFlat[i] ){
+     newArr.push(arrFlat[i])
+  }
+  //if(charCode)
+
+} return newArr
+}
+console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]))
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+
+// /
