@@ -1,0 +1,14 @@
+function uniteUnique(...arr) {
+  // [ 1, 3, 2, 5, 2, 1, 4, 2, 1 ]
+  let arr1 = []
+let af = arr.flat();
+ for (let arg in arguments){
+  return af.filter((b)=> !arguments[arg].includes(b))
+ }
+
+}
+console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]))
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+//let a = fullArr.filter((a) => !arr1.includes(a) | !arr2.includes(a)) // 
+
+
