@@ -1,0 +1,19 @@
+function convertHTML(str) {
+  let strSplit= str.split(" ")
+  let char = {"&":"&amp;",
+            "<":"&lt;",
+            ">":"&gt;"
+            }
+
+            
+  for (let i=0; i< strSplit.length; i++){
+    let strI = strSplit[i]
+  for(let input in char){
+  if(strI == input){
+    return str.replaceAll(input,char[input])
+  }
+   }
+  }  
+}
+console.log(convertHTML("Dolce & Gabbana"))
+convertHTML("Dolce & Gabbana");
