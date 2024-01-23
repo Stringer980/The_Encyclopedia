@@ -1,0 +1,15 @@
+function convertHTML(str) {
+  let char = {"&":"&amp;",
+            "<":"&lt;",
+            ">":"&gt;",
+           '"':"&quot;",
+           "'":"&apos;"
+            }
+
+  for(let input in char){
+   str = str.replace(new RegExp(input,"g"),char[input]);
+    } return str
+  }  
+
+console.log(convertHTML("Hamburgers < Pizza < Tacos"));
+convertHTML("Dolce & Gabbana");
