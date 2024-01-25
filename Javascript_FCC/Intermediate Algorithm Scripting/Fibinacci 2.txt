@@ -1,0 +1,17 @@
+function sumFibs(num) {  
+  
+if (num === 0){
+  return 
+  } else {        
+  
+let empty = 0
+return sumFibs(num -1) + sumFibs(num -2)
+    }return a
+  }
+
+ 
+console.log(sumFibs(4))
+sumFibs(4);// total is 20 
+
+//}  else { let a = sumFibs(num -1) + sumFibs(num -2)
+//return a}
