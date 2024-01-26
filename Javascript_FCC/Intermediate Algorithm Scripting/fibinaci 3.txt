@@ -1,0 +1,18 @@
+function sumFibs(num) {
+let arr = [0,1,1]
+let result = 0
+let a =0
+let b = 1
+
+while (0 < num){
+ num--
+ a++
+ b++
+  result = (arr[b]+arr[a])
+  arr.push(result)  
+ } return (arr)
+}
+console.log(sumFibs(7))
+sumFibs(7);// total is 20 
+//let arr = [0,1,1,2]
+//          [0.1.2.3]
