@@ -4,19 +4,18 @@ let result = 0
 let a =0
 let b = 1
 let arr1= []
-while (0 < num-3){
+while (0 < num-2){
  num--
  a++
  b++
   result = (arr[b]+arr[a])
   arr.push(result)  
- } if(arr.filter(a=> a % 2=== 0).reduce((a,b)=>a+b)<num+1){
-   ar
- }
- console.log(num+1)
- return t
+ } return arr.filter(a=> a % 2 === 1 && a < num+4).reduce((a,b)=>a+b)
+
+ 
+ 
 }
-console.log(sumFibs(4))
+console.log(sumFibs(10))
 sumFibs(4);// total is 20 
 //let arr = [0,1,1,2]
 //          [0.1.2.3]
