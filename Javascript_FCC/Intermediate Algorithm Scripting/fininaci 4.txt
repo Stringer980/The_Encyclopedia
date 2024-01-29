@@ -1,21 +1,26 @@
 function sumFibs(num) {
+ // console.log(num)
+  let numSlice = String(num).slice()
+ // console.log(numSlice)
 let arr = [0,1,1]
 let result = 0
 let a =0
 let b = 1
 let arr1= []
-while (0 < num-2){
+while (0 < num-3){
  num--
  a++
  b++
   result = (arr[b]+arr[a])
   arr.push(result)  
- } return arr.filter(a=> a % 2 === 1 && a < num+4).reduce((a,b)=>a+b)
-
- 
- 
+ }let fil= arr.filter(a=> a % 2 === 1)
+  for(let i=0;i<fil.length;i++){
+  if(fil[i]<numSlice){
+  arr1.push(fil[i])
+  } 
+   }return arr1.reduce((a,b)=>a+b) 
 }
-console.log(sumFibs(10))
+console.log(sumFibs(75025))
 sumFibs(4);// total is 20 
 //let arr = [0,1,1,2]
 //          [0.1.2.3]
