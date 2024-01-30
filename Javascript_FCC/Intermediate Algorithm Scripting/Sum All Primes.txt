@@ -1,0 +1,12 @@
+function sumPrimes(num) {
+  let numCopy =String(num).slice()
+  let arr = [];
+  while (0 < num){
+    num--
+    arr.push(num+1)
+  }
+  return arr.filter((a)=> (a/2|a/5|a/5) )
+}
+console.log(sumPrimes(10))
+sumPrimes(10);
+// 2,3,5,7
