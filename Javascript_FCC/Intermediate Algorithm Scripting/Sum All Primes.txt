@@ -1,12 +1,22 @@
 function sumPrimes(num) {
   let numCopy =String(num).slice()
   let arr = [];
+  let arr1 = [];
+  let obj ={prime1 :2,
+            prime3 :3,
+            prime5 :5,
+            prime7 :7,}
   while (0 < num){
     num--
-    arr.push(num+1)
-  }
-  return arr.filter((a)=> (a/2|a/5|a/5) )
+    arr.push(num) //total
+    for (let pNum in obj){
+if(obj[pNum]*num<numCopy){
+      arr1.push(obj[pNum]*num )
+      }
+    }
+  }return arr1.sort()
+
 }
-console.log(sumPrimes(10))
+console.log(sumPrimes(20))
 sumPrimes(10);
 // 2,3,5,7
