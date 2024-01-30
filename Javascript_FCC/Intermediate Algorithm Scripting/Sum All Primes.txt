@@ -10,13 +10,17 @@ function sumPrimes(num) {
     num--
     arr.push(num) //total
     for (let pNum in obj){
-if(obj[pNum]*num<numCopy){
-      arr1.push(obj[pNum]*num )
+      let val = obj[pNum]
+if(val*num < numCopy){
+      arr1.push(val*num )
       }
     }
-  }return arr1.sort()
+  }let arrPrimes = [2,3,5,7]
+  return arr.filter((a)=> !arr1.includes(a)).concat(arrPrimes).sort().reduce((a,b)=>a+b)-1
+
+
 
 }
-console.log(sumPrimes(20))
+console.log(sumPrimes(977))
 sumPrimes(10);
 // 2,3,5,7
