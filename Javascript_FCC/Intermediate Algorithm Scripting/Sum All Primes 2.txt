@@ -12,18 +12,20 @@ function sumPrimes(num) {
     arr.push(initial) //total
   }
      
-  for(let i =0; i < numCopy; i++){
+  for(let i =0; i < num; i++){
 p2+= 2
-p3+=3
-p5+=5
-p7+=7
-if(p2&&p3&&p5&&p7<numCopy){
-arr1.push(p2)
-arr1.push(p3)
-arr1.push(p5)
-arr1.push(p7)
-}
-  } return arr.filter((a)=> arr1.indexOf(a))
+p3+= 3
+p5+= 5
+p7+= 7
+
+arr1.push(p2,p3,p5,p7)
+//arr1.push(p3)
+//arr1.push(p5)
+//arr1.push(p7)
+
+  } let newArr = arr1.concat(arr)
+  return  newArr.filter(a=> arr1.indexOf(a)=== -1)//.reduce((e,r)=>e+r)
+  
 
 }
 console.log(sumPrimes(977))
