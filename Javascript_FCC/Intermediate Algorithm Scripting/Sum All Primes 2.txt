@@ -1,0 +1,31 @@
+function sumPrimes(num) {
+  let numCopy =String(num).slice()
+  let arr = [];
+  let arr1 = [];
+  let initial = 1
+  let p2 =0  
+  let p3 =0  
+  let p5 =0 
+  let p7 =0       
+  while (initial < num){
+    initial++
+    arr.push(initial) //total
+  }
+     
+  for(let i =0; i < numCopy; i++){
+p2+= 2
+p3+=3
+p5+=5
+p7+=7
+if(p2&&p3&&p5&&p7<numCopy){
+arr1.push(p2)
+arr1.push(p3)
+arr1.push(p5)
+arr1.push(p7)
+}
+  } return arr.filter((a)=> arr1.indexOf(a))
+
+}
+console.log(sumPrimes(977))
+sumPrimes(10);
+// 2,3,5,7
