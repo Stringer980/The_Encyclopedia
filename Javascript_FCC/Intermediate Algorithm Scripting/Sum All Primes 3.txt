@@ -42,18 +42,19 @@ p41+= 41
 p43+=43
 p47+=47
 p53+=53
+
 arr1.push(p2,p3,p5,p7,p11,p13,p17,p19,p23,p29,p31,p37,p41,p43,p47,p53)
 
-//76393
-  } let remaing = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53]
-  let joinedArr = arr1.concat(arr).filter(a=> !arr1.includes(a)).concat(remaing)//.reduce((e,r)=>e+r,0)
-  return joinedArr.reduce((a+b)=>a)
+
+  } 
+  let startPrimes = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53]
+  let joinedArr = arr1.concat(arr)
+                      .filter(a=> !arr1.includes(a))
+                      .concat(startPrimes)
+  return joinedArr.reduce((a,b) => b <= numCopy? a+b:a)
 
 }
-console.log(sumPrimes(977))
+console.log(sumPrimes(10))
 sumPrimes(10);
-// 2,3,5,7
 
 
-
-https://plus.maths.org/content/sundarams-sieve
