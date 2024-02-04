@@ -21,4 +21,6 @@ for (let i= 0; i<range.length;i++){
 }
 console.log(smallestCommons([1,5]))
 smallestCommons([1,5]);
-//
+	//
+
+// look at do...while loop to stop loop
