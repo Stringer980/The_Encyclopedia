@@ -23,3 +23,7 @@ let state = true
 console.log(smallestCommons([1, 13]))
 smallestCommons([1, 13]);
 	
+/*   
+LCM = (A X B)/GCD
+GCD = 
+*/
